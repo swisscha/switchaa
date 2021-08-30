@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>switch</title>
+</head>
+
+
+<body>
+
+    <div class="Headtext">
+        <h1 class="glow" style="font-size:8vw;">Switch it on</h1>
+        
+        <div class="right">
+            <p style="font-size:3vw;">Resize the browser window to see how the font size scales.</p>
+        </div>
+
+    </div>
+
+     
+
+    <div class="Responsive">
+        <img src="img/foto_lamp.png" alt="lamp" class="lamp">
+        <img src="img/foto_light.png" alt="light" class="light" id="light" width="700" height="700">
+    </div>
+
+
+    <div class="schalter">
+        <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+    </div>
+    
+
+    <script>
+
+        var btn = document.getElementById("btn");
+        var light = document.getElementById("light");
+
+        function toggleBtn(){
+            btn.classList.toggle("active");
+            light.classList.toggle("on");
+        }
+
+    </script>
+
+    
+
+</body>
+</html>
+

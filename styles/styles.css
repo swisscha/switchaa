@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+:root {
+  --primary-color: #33ff33;
+  --secondary-color: #a6a6a6;
+  --third-color: #f5f5f5;
+}
+
+h1, h2, p {
+  color: #f5f5f5;
+  text-decoration: none;
+}
+
+body {
+  background: #333333;
+  font-family: 'Archivo';
+}
+
+.Headtext {
+  font-size: 80px;
+  color: #fff;
+}
+
+.right {
+  text-align: center;
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 300px;
+}
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1.5s ease-in-out infinite alternate;
+          animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #e60073, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ffbb00, 0 0 40px #ffbb00, 0 0 50px #ffbb00, 0 0 60px #ffbb00, 0 0 70px #ffbb00, 0 0 80px #ffbb00;
+  }
+}
+
+.lamp-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.Responsive {
+  display: block;
+  margin-top: -67%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.lamp {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.light {
+  display: block;
+  margin-top: -1%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  -webkit-transform: translateX(-1%);
+          transform: translateX(-1%);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: #efefef;
+  height: 28px;
+  width: 55px;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.5s, margin-left 0.5s;
+  transition: background 0.5s, margin-left 0.5s;
+}
+
+.active {
+  background: #08ec41;
+}
+
+.active span {
+  background: #fff;
+  margin-inline: 23px;
+}
+
+.on {
+  opacity: 1;
+}
+
+button span {
+  display: block;
+  background: #999;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
+}
+/*# sourceMappingURL=styles.css.map */
